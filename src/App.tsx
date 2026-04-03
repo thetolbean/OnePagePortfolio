@@ -2,6 +2,7 @@ export default function App() {
   return (
     <div className="bg-gray-950 text-white min-h-screen">
       {/* Navbar */}
+      {/*This section controls the navbar, including jump links to each of the sections for ease of use */}
       <nav className="flex justify-between items-center p-4 max-w-5xl mx-auto">
         <h1 className="font-bold text-lg">Preston Smith</h1>
         <div className="space-x-4 text-sm">
@@ -18,6 +19,7 @@ export default function App() {
       </nav>
 
       {/* About */}
+      {/* This section is the about me section, mostly just one paragraph within a section tag*/}
       <section id="about" className="px-4 py-12 max-w-3xl mx-auto">
         <h3 className="text-xl sm:text-2xl font-semibold mb-4">About Me</h3>
         <p className="text-gray-400 leading-relaxed">
@@ -29,11 +31,13 @@ export default function App() {
       </section>
 
       {/* Projects */}
+      {/* This is the projects section, including each of the cards that animate on hover over. These are stored in such a way to be vertical on smalelr screens, but expand to be horizontal on larger screens. */}
       <section id="projects" className="px-4 py-12 max-w-5xl mx-auto">
         <h3 className="text-xl sm:text-2xl font-semibold mb-6">Projects</h3>
 
         <div className="grid gap-6 sm:grid-cols-2">
-          {/* Project Card */}
+          {/* Project Card One*/}
+          {/* Each of these is the project cards stored in this div to follow the grip paterns*/}
           <div
             className="bg-gray-900 p-5 rounded-2xl shadow-md 
                           transition transform hover:-translate-y-2 hover:shadow-xl"
@@ -46,6 +50,7 @@ export default function App() {
             <div className="text-sm text-blue-400">View Project →</div>
           </div>
 
+          {/* Project Card Two*/}
           <div
             className="bg-gray-900 p-5 rounded-2xl shadow-md 
                           transition transform hover:-translate-y-2 hover:shadow-xl"
@@ -61,16 +66,11 @@ export default function App() {
       </section>
 
       {/* Contact */}
+      {/* Contact section, individual P tags to define each line */}
       <section id="contact" className="text-center px-4 py-12">
         <h3 className="text-xl sm:text-2xl font-semibold mb-4">Contact</h3>
         <p className="text-gray-400 mb-2">Preston Smith</p>
         <p className="text-gray-400 mb-2">91167896@nebraska.edu</p>
-        <button
-          className="mt-4 px-6 py-2 bg-blue-500 rounded-lg 
-                           hover:bg-blue-600 transition"
-        >
-          Say Hello
-        </button>
       </section>
     </div>
   );
